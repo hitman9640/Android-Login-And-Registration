@@ -30,16 +30,7 @@ Read Full tutorial
   - Copy android_login folder to XAMPP=>htdocs
   - Create database android_login =>
 
-         CREATE TABLE IF NOT EXISTS `users` (
-  `id` int(11) primary key auto_increment,
-  `unique_id` varchar(23) NOT NULL unique,
-  `name` varchar(50) NOT NULL,
-  `email` varchar(100) NOT NULL unique,
-  `encrypted_password` varchar(250) NOT NULL,
-  `otpint` int(6) NOT NULL,
-  `verified` int(1) NOT NULL ,
-  `created_at datetime` datetime NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+         CREATE TABLE IF NOT EXISTS `users` (`id` int(11) primary key auto_increment, `unique_id` varchar(23) NOT NULL unique, `name` varchar(50) NOT NULL, `email` varchar(100) NOT NULL unique, `encrypted_password` varchar(250) NOT NULL, `otpint` int(6) NOT NULL, `verified` int(1) NOT NULL ,`created_at datetime` datetime NOT NULL)  ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
   - Change Config.php file for username and password
       
@@ -57,16 +48,7 @@ Read Full tutorial
   - Copy android_login folder to cpanel=>www
   - Create database android_login =>
   
-        CREATE TABLE IF NOT EXISTS `users` (
-  `id` int(11) primary key auto_increment,
-  `unique_id` varchar(23) NOT NULL unique,
-  `name` varchar(50) NOT NULL,
-  `email` varchar(100) NOT NULL unique,
-  `encrypted_password` varchar(250) NOT NULL,
-  `otpint` int(6) NOT NULL,
-  `verified` int(1) NOT NULL ,
-  `created_at datetime` datetime NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+        CREATE TABLE IF NOT EXISTS `users` (`id` int(11) primary key auto_increment, `unique_id` varchar(23) NOT NULL unique, `name` varchar(50) NOT NULL, `email` varchar(100) NOT NULL unique, `encrypted_password` varchar(250) NOT NULL, `otpint` int(6) NOT NULL, `verified` int(1) NOT NULL ,`created_at datetime` datetime NOT NULL)  ENGINE=MyISAM DEFAULT CHARSET=latin1;
     
   - Change Config.php file for username and password
       $username = "username"; 
